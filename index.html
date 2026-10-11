@@ -190,6 +190,22 @@
         background: rgba(255, 255, 255, 0.75);
         border-left-color: var(--gradien-header-2);
     }
+   .table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+img, pre, code, table {
+  max-width: 100%;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+
 </style>
 </head>
 
@@ -276,7 +292,8 @@
         <section>
             <h2>🏷️ Essential HTML Tags</h2>
 
-            <table border="1">
+            <div class="table-container">
+<table border="1">
                 <thead>
                     <tr>
                         <th>Tag</th>
@@ -322,8 +339,8 @@
                         <td>&lt;ul&gt;&lt;li&gt;Item&lt;/li&gt;&lt;/ul&gt;</td>
                     </tr>
                 </tbody>
-            </table>
-
+           </table>
+</div>
 
             <h3>🎯 Live Examples:</h3>
 
